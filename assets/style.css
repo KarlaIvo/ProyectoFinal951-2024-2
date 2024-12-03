@@ -1,0 +1,135 @@
+/* Columnas */
+.col_red {
+    background-color: red;
+    height: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.col_orange {
+    background-color: orange;
+    height: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.col_pink {
+    background-color: pink;
+    height: 600px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.col_white {
+    display: flex;
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    gap: 10px;
+    background-color: white;
+    height: 300px;
+    width: 50px;
+}
+
+.col_green {
+    display: flex;
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    gap: 10px;
+    background-color: green;
+    height: 300px;
+    width: 50px;
+}
+
+.col_yellow {
+    display: flex;
+    justify-content: center; /* Centra los cuadros horizontalmente */
+    gap: 10px;
+    background-color: yellow;
+    height: 300px;
+    width: 50px;
+}
+
+.row_pink {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: pink;
+    height: 1000px;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 100%;
+    height: 100px;
+}
+
+.col_blue {
+    background-color: green;
+}
+
+.col_purple {
+    background-color: white;
+}
+
+.col_grey {
+    background-color: yellow;
+}
+
+
+/* Filas */
+.row_uno {
+    background-color: #d98880;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.row_blue {
+    background-color: lightblue;
+    height: 600px;
+    margin-bottom: 20px;
+}
+
+
+/* Estilo para párrafos */
+.custom_p {
+    color: #d81b60 ;
+}
+
+p {
+    color: #d81b60;
+    font-size: 20px;
+}
+
+/* Selectores */
+.Select {
+    color: black;
+}
+
+/* Navegación */
+.nav-pills .nav-link {
+    color: #f65ea5;
+}
+
+.nav-pills .nav-link.active {
+    background-color:  #fcc4dc;
+    color: white;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 16rem;
+    padding: 2rem 1rem;
+    background-color: #fadbd8;
+    color: #d98880;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+
+.content {
+    margin-left: 18rem;
+    margin-right: 2rem;
+    padding: 2rem 1rem;
+}

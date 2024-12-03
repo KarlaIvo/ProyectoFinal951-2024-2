@@ -1,7 +1,7 @@
 import pandas as pd
 
 def accesories():
-        df = pd.read_csv('proyecto/assets/datasets/beauty_creations_accessories.csv')
+        df = pd.read_csv('assets/datasets/beauty_creations_accessories.csv')
         print(len(df))
         #nulos df
         nulls = df.isnull()
@@ -27,10 +27,10 @@ def accesories():
         else:
                 print(f"La columna '{columna}' no existe en el DataFrame.")
 
-        df.to_csv('proyecto/assets/datasets/Clean_bc_accessories.csv', index=False)
+        df.to_csv('assets/datasets/Clean_bc_accessories.csv', index=False)
 
 def bundles():
-        df1 = pd.read_csv('proyecto/assets/datasets/beauty_creations_bundles.csv')
+        df1 = pd.read_csv('assets/datasets/beauty_creations_bundles.csv')
         print(len(df1))
 
         # nulos df1
@@ -56,10 +56,10 @@ def bundles():
         else:
                 print(f"La columna '{columna}' no existe en el DataFrame.")
 
-        df1.to_csv('proyecto/assets/datasets/Clean_bc_bundles.csv', index=False)
+        df1.to_csv('assets/datasets/Clean_bc_bundles.csv', index=False)
 
 def collabs():
-        df2 = pd.read_csv('proyecto/assets/datasets/beauty_creations_collabs.csv')
+        df2 = pd.read_csv('assets/datasets/beauty_creations_collabs.csv')
         print(len(df2))
 
         # nulos df1
@@ -85,7 +85,7 @@ def collabs():
         else:
                 print(f"La columna '{columna}' no existe en el DataFrame.")
 
-        df2.to_csv('proyecto/assets/datasets/Clean_bc_collabs.csv', index=False)
+        df2.to_csv('assets/datasets/Clean_bc_collabs.csv', index=False)
 
 if __name__ == "__main__":
         accesories()

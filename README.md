@@ -2,31 +2,34 @@
    <p align="center">
    <img src="assets/imagenes/bc.png">
    </p>
-##Índice
+# Nombre del Proyecto
 
-*[Descripcion de la Empresa](#Empresa)
+Breve descripción del proyecto. (Por ejemplo, "Un sistema de gestión de reservas utilizando Python.")
 
-*[Integrantes](#Integrantes)
+## Índice
+1. [Introducción](#introducción)
+2. [Características](#características)
+3. [Instalación](#instalación)
+4. [Uso](#uso)
+5. [Contribuciones](#contribuciones)
+6. [Licencia](#licencia)
+7. [Créditos](#créditos)
 
-*[Índice](#índice)
+## Introducción
+Una breve explicación sobre el propósito del proyecto y los problemas que resuelve.
 
-*[Descripción del proyecto](#descripción-del-proyecto)
+## Características
+- Punto destacado 1
+- Punto destacado 2
+- Punto destacado 3
 
-*[Estado del proyecto](#Estado-del-proyecto)
+## Instalación
+Instrucciones para instalar y configurar el proyecto.
 
-*[Características de la aplicación y demostración](#Características-de-la-aplicación-y-demostración)
+```bash
+git clone https://github.com/tuusuario/tu-repositorio.git
+cd tu-repositorio
 
-*[Acceso al proyecto](#acceso-proyecto)
-
-*[Tecnologías utilizadas](#tecnologías-utilizadas)
-
-*[Personas Contribuyentes](#personas-contribuyentes)
-
-*[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
-
-* [Licencia](#licencia)
-
-*[Conclusión](#conclusión)
 
 ##Empresa
 

@@ -1,6 +1,6 @@
 <h1 align="center"> Proyecto final para Programación para la Extracción de Datos 2024-2 </h1>
    <p align="left">
-   <img src="">
+   <img src="assets/imagenes/bc.png">
    </p>
 
 Integrantes:

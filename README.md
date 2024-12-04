@@ -5,28 +5,45 @@
 
 ## Índice
 1. [Introducción](#introducción)
-2. [Partes del proyecto](#Partes-del-proyecto)
-3. [Empresa](#Empresa)
-4. [Integrantes](#Integrantes)
-5. [Contribuciones](#contribuciones)
-6. [Licencia](#licencia)
-7. [Créditos](#créditos)
+2. [Integrantes](#Integrantes)
+3. [Partes del proyecto](#Partes-del-proyecto)
+4. [Empresa](#Empresa)
+6. [Instrucciones](#Instrucciones)
+7. [Librerias](#Librerias)
 
 ## Introducción
 En este proyecto realizamos todo el proceso desde buscar una pagina y extraer datos de ella hasta realizar dashboards de los datos que se extrajeron, con los cuales se respondieron preguntas que se generaron acerca de informacion la pagina (en nuestro caso la pagina de Beauty Creations)
+
+## Integrantes:
+- Maria Fernanda Hernandez Aleman
+- Karla Ivonne Zavala Bojorquez
 
 ## Partes del proyecto
 - Extraccion de datos
 - Transformacion de datos
 - Visualizacion de datos
 
-
 ## Empresa
 Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de productos cosmeticos principalmente, con la mision de aumentar la confianza de los consumidores.
 
+## Instrucciones
+1. 
+2. 
 
-## Integrantes:
-1.Maria Fernanda Hernandez Aleman
-2.Karla Ivonne Zavala Bojorquez
+
+## Librerias
+- Time
+- Pandas
+- selenium
+- selenium.webdriver.chrome.service
+- selenium.webdriver.chrome.options
+- selenium.webdriver.common.by
+- selenium.webdriver.support.ui
+- selenium.webdriver.support
+- webdriver_manager.chrome import ChromeDriverManager
+- bs4 import BeautifulSoup
+- dash_bootstrap_components
+- dash import Input, Output, dcc, html, Dash, callback
+- 
 
 

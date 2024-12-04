@@ -58,7 +58,7 @@ def scrape_beauty_creations_section(navegador, section_name, section_xpath, shop
                 break
 
     df = pd.DataFrame(data)
-    df.to_csv(f"datasets/beauty_creations_{section_name}.csv", index=False)
+    df.to_csv(f"assets/datasets/beauty_creations_{section_name}.csv", index=False)
 
 
 def main():

@@ -27,14 +27,20 @@ En este proyecto realizamos todo el proceso desde buscar una pagina y extraer da
 Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de productos cosmeticos principalmente, con la mision de aumentar la confianza de los consumidores.
 
 ## Instrucciones
-1. 
-2. 
+1. `Paso`: Acceder a el codigo de <a href="Web_Scraping_bc.py">Web Scrapper</a> para obtener los datos de la pagina <a href="https://beautycreationscosmetics.com.mx/">Beauty Creations</a>
+2. `Paso`: Acceder al codigo de <a href="Clean_bc.py">Limpieza y Normalizacion</a> para realizar la limpieza y normalizacion de los datos
+3. `Paso`: Acceder al codigo de <a href="assets/datasets/Clean_bc_accessories.csv">Accessories</a>, <a href="assets/datasets/Clean_bc_bundles.csv">Bundles</a> y <a href="assets/datasets/Clean_bc_collabs.csv">Collabs</a> en caso de tardarse mucho el WebScrapper
+4. `Paso`: Acceder al codigo de <a href="assets/style.css">style.css</a> ,al de <a href="menu.py">Menu</a>, luego al de <a href="welcome.py">Welcome</a>, depues a los de <a href="dashboard_uno.py">Dashboard1</a>, <a href="dashboard_dos.py">Dashboard2</a> y <a href="dashboard_tres.py">Dashboard3</a>
+5. `Paso`: Dar Run en el archivo de <a href="menu.py">Menu</a>
+6. `Paso`: Visualizar los Dashboards
+
 
 
 ## Librerias
-- Time
-- Pandas
-- selenium
+Las librerias usadas a lo largo del proyecto fueron:
+- time
+- pandas
+- selenium import webdriver
 - selenium.webdriver.chrome.service
 - selenium.webdriver.chrome.options
 - selenium.webdriver.common.by
@@ -44,6 +50,7 @@ Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de pr
 - bs4 import BeautifulSoup
 - dash_bootstrap_components
 - dash import Input, Output, dcc, html, Dash, callback
-- 
+- plotly.express
+
 
 

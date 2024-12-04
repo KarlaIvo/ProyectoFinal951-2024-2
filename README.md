@@ -27,10 +27,10 @@ En este proyecto realizamos todo el proceso desde buscar una pagina y extraer da
 Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de productos cosmeticos principalmente, con la mision de aumentar la confianza de los consumidores.
 
 ## Instrucciones
-1. `Paso`: Acceder a el codigo de  <a href="Web_Scraping_bc.py">Web Scrapper</a>
-2. `Paso`: Acceder al codigo de  <a href="Web_Scraping_bc.py">Limpieza y Normalizacion</a>
-3. `Paso`:
-4. `Paso`:
+1. `Paso`: Acceder a el codigo de <a href="Web_Scraping_bc.py">Web Scrapper</a> para obtener los datos de la pagina <a href="https://beautycreationscosmetics.com.mx/">Beauty Creations</a>
+2. `Paso`: Acceder al codigo de <a href="Clean_bc.py">Limpieza y Normalizacion</a> para realizar la limpieza y normalizacion
+3. `Paso`: Acceder al codigo de <a href="Clean_bc.py">Migracion</a>
+4. `Paso`: Acceder al codigo de <a href="Clean_bc.py">Migracion</a>
 5. `Paso`:
 
 

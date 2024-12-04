@@ -1,110 +1,85 @@
 import pandas as pd
 import plotly.express as px
-from dash import dcc, html, Dash, callback, Input, Output
+from dash import dcc, html, Dash, callback, Output, Input
 import dash_bootstrap_components as dbc
 
 data = pd.read_csv("assets/datasets/Clean_bc_accessories.csv")
-def grafica_pastel(data, names_col, values_col):
-    fig = px.pie(
-        data,
-        names=names_col,
-        values=values_col,
-        title='Distribución de Precios por Accesorio',
-        color_discrete_sequence=px.colors.sequential.RdBu
-    )
-    return fig
 
-
-
-def tarjeta_filtro():
-    control = dbc.Card(
-        [html.Div([
-                dbc.Label("Accesorio:", style={"margin-left": "10px", "font-weight": "bold"}),
-                dcc.Dropdown(
-                    id="ddAccesorio",  # Cambiado el ID para reflejar el nuevo propósito
-                    options=[{"label": "Todos", "value": "all"}] +
-                            [{"label": titulo, "value": titulo} for titulo in data['Título'].unique()],
-                    value="all"
-                )
-            ], style={"margin-bottom": "15px"}),
-            html.Div([
-                dbc.Label("Rango de Precios:", style={"margin-left": "10px", "font-weight": "bold"}),
-                dbc.InputGroup(
-                    [
-                        dbc.Input(
-                            id="minPrice",
-                            type="number",
-                            placeholder="Mínimo",
-                            min=0
-                        ),
-                        dbc.Input(
-                            id="maxPrice",
-                            type="number",
-                            placeholder="Máximo",
-                            min=0
-                        )
-                    ]
-                )
-            ])
-        ],
-        body=True,
-        style={"padding": "15px", "margin-bottom": "15px"}
-    )
-    return control
-
-
-def grafica_box(y_cols):
-    fig_box = px.box(data,y=y_cols,
-                     title="Grafica de Caja y Bigotes")
-    fig_box.update_layout(
+def grafica_histograma(data):
+    fig_histograma = px.histogram(data, y='Price', nbins=20, title='Distribución de Precios de Productos',
+                                  orientation='h')
+    fig_histograma.update_traces(marker=dict(color="#7fb3d5"))
+    fig_histograma.update_layout(
         paper_bgcolor="#fadbd8",
-        plot_bgcolor="#ffffff",
-        title=dict(font=dict(size=20), x=0.5),
+        plot_bgcolor="#fadbd8",
+        title=dict(font=dict(size=20), x=0.5)
     )
-    return fig_box
+    return fig_histograma
 
+def grafica_top_caros():
+    top_caros = data.nlargest(10, 'Price')
+    fig_barras_caros = px.bar(top_caros, x='Title', y='Price', title='Top 10 Productos más Caros')
+    fig_barras_caros.update_traces(marker=dict(color="#a93226"))
+    fig_barras_caros.update_layout(
+        paper_bgcolor="#fadbd8",
+        plot_bgcolor="#fadbd8",
+        title=dict(font=dict(size=20), x=0.5)
+    )
+    return fig_barras_caros
+
+def grafica_top_baratos():
+    top_baratos = data.nsmallest(10, 'Price')  # Filtra los 10 productos más baratos
+    fig_barras_baratos = px.bar(top_baratos, x='Title', y='Price', title='Top 10 Productos más Baratos')
+    fig_barras_baratos.update_traces(marker=dict(color="#45b39d"))  # Cambia el color de las barras
+    fig_barras_baratos.update_layout(
+        paper_bgcolor="#fadbd8",
+        plot_bgcolor="#fadbd8",
+        title=dict(font=dict(size=20), x=0.5)
+    )
+    return fig_barras_baratos
 
 
 def dashboard():
     body = html.Div([
+        dbc.Row(html.Div([
+                html.H3("Distribución de Precios, 10 Productos Más Caros y Más Baratos", style={"color": "white", "text-align": "center", "margin-top": "30px"})]), className="row_uno"),
         dbc.Row([
-            dbc.Col(
-                html.Div([
-                    html.H3("Filtros", style={"color": "#d98880"}),
-                    html.Hr(),
-                    tarjeta_filtro()
-                ]),
-                style={"background-color": "#fadbd8"}, width=4
-            ),
-            dbc.Col(
-                html.Div([
-                    dbc.Row(dcc.Graph(id="figLine")),
-                    dbc.Row(dcc.Graph(id="figBox")),
-                ]),
-                width=8
-            )
+                dbc.Col(dcc.Graph(id="figDistribucionPrecios")),  # Gráfico de distribución de precios
+                dbc.Col(dcc.Graph(id="figTopCaros")),  # Gráfico de los productos más caros
+                dbc.Col(dcc.Graph(id="figTopBaratos")),  # Gráfico de los productos más baratos
+            ])
         ])
-    ], style={"background-color": "#FFFFFF"})
     return body
 
+@callback(
+    Output("figDistribucionPrecios", "figure"),
+    Input("figDistribucionPrecios", "id")
+)
+def update_histograma(_):
+    fig_histograma = grafica_histograma(data)
+    return fig_histograma
 
 @callback(
-    Output(component_id="figLine",component_property="figure"),#salidas del evento
-    Output(component_id="figBox",component_property="figure"),
-    Input(component_id="ddCompany",component_property="value")#acciona el evento
+    Output("figTopCaros", "figure"),
+    Input("figTopCaros", "id")
+)
+def update_top_caros(_):
+    fig_barras_caros = grafica_top_caros()
+    return fig_barras_caros
 
-)#decorador es decir funcionalidad extra
-def update_grafica(value_company):
-    # Filtrar o ajustar los datos según el valor seleccionado
-    if value_company == "all":
-        filtered_data = data
-    else:
-        filtered_data = data[data['Título'] == value_company]
+@callback(
+    Output("figTopBaratos", "figure"),
+    Input("figTopBaratos", "id")
+)
+def update_top_baratos(_):
+    fig_barras_baratos = grafica_top_baratos()
+    return fig_barras_baratos
 
-    # Generar las gráficas
-    fig_pastel = grafica_pastel(filtered_data, names_col='Título', values_col='Precio')
-    fig_box = grafica_box(filtered_data, y_col='Precio')
 
-    return fig_pastel, fig_box
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app.layout = dashboard()
+
+if __name__ == "__main__":
+    app.run_server(debug=True)
 
 

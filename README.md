@@ -28,11 +28,11 @@
 
 *[Conclusión](#conclusión)
 
-#Empresa
+##Empresa
 
-#Integrantes:
--Maria Fernanda Hernandez Aleman
--Karla Ivonne Zavala Bojorquez
+##Integrantes:
+1.Maria Fernanda Hernandez Aleman
+2.Karla Ivonne Zavala Bojorquez
 
 Descripcion:
 En este proyecto realizamos todo el proceso desde buscar una pagina y extraer datos de ella hasta realizar dashboards de los datos que se extrajeron, con los cuales se respondieron preguntas que se generaron acerca de informacion la pagina (en nuestro caso la pagina de Beauty Creations).

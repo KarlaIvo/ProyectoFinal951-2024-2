@@ -35,9 +35,9 @@ Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de pr
    - Editar el archivo <a href="funcion_python_sql.py">Funcion Python</a> para actualizar los detalles de conexión a la base de datos en la función "conectar()".
    - def conectar():
     return mysql.connector.connect(
-        - host='localhost', $${\color{red}# Cambiar esto si tu base de datos no está en localhost}$$
-        - user='root',       # Cambiar esto por tu nombre de usuario
-        - password='Asdf123', # Cambiar esto por tu contraseña
+        - host='localhost', [!WARNING] # Cambiar esto si tu base de datos no está en localhost 
+        - user='root', [!WARNING] # Cambiar esto por tu nombre de usuario
+        - password='Asdf123', [!WARNING] # Cambiar esto por tu contraseña
          <br>database='beauty_creations'
     )
 5. `Paso`: Acceder al codigo de <a href="assets/datasets/Clean_bc_accessories.csv">Accessories</a>, <a href="assets/datasets/Clean_bc_bundles.csv">Bundles</a> y <a href="assets/datasets/Clean_bc_collabs.csv">Collabs</a> en caso de tardarse mucho el WebScrapper

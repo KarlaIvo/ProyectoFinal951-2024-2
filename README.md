@@ -1,5 +1,5 @@
 # ProyectoFinal951-2024-2
-<em> #Proyecto final para Programación para la Extracción de Datos 2024-2 </em>
+<h1 align="center"> #Proyecto final para Programación para la Extracción de Datos 2024-2 </h1>
 
 Integrantes:
 -Maria Fernanda Hernandez Aleman

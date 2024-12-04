@@ -36,8 +36,8 @@ Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de pr
    - def conectar():
     return mysql.connector.connect(
         - host='localhost', <code style="color : name_color"># Cambiar esto si tu base de datos no está en localhost</code>
-        - user='root', [!WARNING] # Cambiar esto por tu nombre de usuario
-        - password='Asdf123', [!WARNING] # Cambiar esto por tu contraseña
+        - user='root', <code style="color : name_color"># Cambiar esto por tu nombre de usuario</code>
+        - password='Asdf123', <code style="color : name_color"># Cambiar esto por tu contraseña</code>
          <br>database='beauty_creations'
     )
 5. `Paso`: Acceder al codigo de <a href="assets/datasets/Clean_bc_accessories.csv">Accessories</a>, <a href="assets/datasets/Clean_bc_bundles.csv">Bundles</a> y <a href="assets/datasets/Clean_bc_collabs.csv">Collabs</a> en caso de tardarse mucho el WebScrapper

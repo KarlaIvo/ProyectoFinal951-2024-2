@@ -5,7 +5,7 @@
 
 ## Índice
 1. [Introducción](#introducción)
-2. [Partes del proyecto](#partesdelproyecto)
+2. [Partes del proyecto](#Partes-del-proyecto)
 3. [Empresa](#Empresa)
 4. [Integrantes](#Integrantes)
 5. [Contribuciones](#contribuciones)

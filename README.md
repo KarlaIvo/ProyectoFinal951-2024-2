@@ -28,7 +28,7 @@ Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de pr
 
 ## Instrucciones
 1. `Paso`: Acceder a el codigo de  <a href="Web_Scraping_bc.py">Web Scrapper</a>
-2. `Paso`:
+2. `Paso`: Acceder al codigo de  <a href="Web_Scraping_bc.py">Limpieza y Normalizacion</a>
 3. `Paso`:
 4. `Paso`:
 5. `Paso`:

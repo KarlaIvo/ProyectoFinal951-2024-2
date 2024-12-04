@@ -32,9 +32,10 @@ Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de pr
 
 
 ## Librerias
-- Time
-- Pandas
-- selenium
+Las librerias usadas a lo largo del proyecto fueron:
+- time
+- pandas
+- selenium import webdriver
 - selenium.webdriver.chrome.service
 - selenium.webdriver.chrome.options
 - selenium.webdriver.common.by
@@ -44,6 +45,7 @@ Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de pr
 - bs4 import BeautifulSoup
 - dash_bootstrap_components
 - dash import Input, Output, dcc, html, Dash, callback
-- 
+- plotly.express
+
 
 

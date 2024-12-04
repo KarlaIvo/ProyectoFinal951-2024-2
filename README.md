@@ -4,9 +4,9 @@
    </p>
 ##Índice
 
-*[Título e imagen de portada](#Título-e-imagen-de-portada)
+*[Descripcion de la Empresa](#Empresa)
 
-*[Insignias](#insignias)
+*[Integrantes](#Integrantes)
 
 *[Índice](#índice)
 
@@ -27,7 +27,10 @@
 * [Licencia](#licencia)
 
 *[Conclusión](#conclusión)
-Integrantes:
+
+#Empresa
+
+#Integrantes:
 -Maria Fernanda Hernandez Aleman
 -Karla Ivonne Zavala Bojorquez
 

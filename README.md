@@ -35,7 +35,7 @@ Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de pr
    - Editar el archivo <a href="funcion_python_sql.py">Funcion Python</a> para actualizar los detalles de conexión a la base de datos en la función "conectar()".
    - def conectar():
     return mysql.connector.connect(
-        - host='localhost',  # Cambiar esto si tu base de datos no está en localhost
+        - host='localhost', <p style="color:#FF0000";># Cambiar esto si tu base de datos no está en localhost</p> 
         - user='root',       # Cambiar esto por tu nombre de usuario
         - password='Asdf123', # Cambiar esto por tu contraseña
          <br>database='beauty_creations'

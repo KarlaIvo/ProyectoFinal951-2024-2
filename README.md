@@ -38,7 +38,7 @@ Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de pr
         - host='localhost',  # Cambiar esto si tu base de datos no está en localhost
         - user='root',       # Cambiar esto por tu nombre de usuario
         - password='Asdf123', # Cambiar esto por tu contraseña
-         database='beauty_creations'
+         <hr>database='beauty_creations'
     )
 5. `Paso`: Acceder al codigo de <a href="assets/datasets/Clean_bc_accessories.csv">Accessories</a>, <a href="assets/datasets/Clean_bc_bundles.csv">Bundles</a> y <a href="assets/datasets/Clean_bc_collabs.csv">Collabs</a> en caso de tardarse mucho el WebScrapper
 6. `Paso`: Acceder al codigo de <a href="assets/style.css">style.css</a> ,al de <a href="menu.py">Menu</a>, luego al de <a href="welcome.py">Welcome</a>, depues a los de <a href="dashboard_uno.py">Dashboard1</a>, <a href="dashboard_dos.py">Dashboard2</a> y <a href="dashboard_tres.py">Dashboard3</a>

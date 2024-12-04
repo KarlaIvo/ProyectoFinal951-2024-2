@@ -6,7 +6,7 @@ import dash_bootstrap_components as dbc
 data = pd.read_csv("assets/datasets/Clean_bc_accessories.csv")
 
 def grafica_hist(data):
-    fig_hist = px.histogram(data, y='Price', nbins=20, title='Distribución de Precios de Productos',
+    fig_hist = px.histogram(data, y='Price', nbins=20, title='Distribución de Precios de Accesorios',
                                   orientation='h')
     fig_hist.update_traces(marker=dict(color="#7fb3d5"))
     fig_hist.update_layout(
@@ -26,7 +26,7 @@ def act_hist(_):
 
 def grafica_caros():
     caros = data.nlargest(10, 'Price')
-    fig_barCar = px.bar(caros, x='Title', y='Price', title='Top 10 Productos más Caros')
+    fig_barCar = px.bar(caros, x='Title', y='Price', title='Top 10 Accesorios más Caros')
     fig_barCar.update_traces(marker=dict(color="#a93226"))
     fig_barCar.update_layout(
         paper_bgcolor="#fadbd8",
@@ -45,7 +45,7 @@ def act_caros(_):
 
 def grafica_baratos():
     baratos = data.nsmallest(10, 'Price')
-    fig_barBara = px.bar(baratos, x='Title', y='Price', title='Top 10 Productos más Baratos')
+    fig_barBara = px.bar(baratos, x='Title', y='Price', title='Top 10 Accesorios más Baratos')
     fig_barBara.update_traces(marker=dict(color="#45b39d"))
     fig_barBara.update_layout(
         paper_bgcolor="#fadbd8",

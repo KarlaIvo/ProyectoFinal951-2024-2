@@ -27,7 +27,7 @@ En este proyecto realizamos todo el proceso desde buscar una pagina y extraer da
 Beauty Creations, una empresa mexicana dedicada a la creacion y produccion de productos cosmeticos principalmente, con la mision de aumentar la confianza de los consumidores.
 
 ## Instrucciones
-1. 
+1. `Paso`:
 2. 
 
 
